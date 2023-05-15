@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>jQuery Examples 1</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('h4.myClass').css("background-color", "#42d4f5"); //background rengi
+            $('*').css("background-color", "white"); //background rengi
+            $('p').css("background-color", "#42f5c2"); //p altta olursa hepsi turuncu olur çünkü hepsinde p etiketi var
+            $('#myId').css("background-color", "#42f5e0"); //background rengi
+            $('.myClass').css("background-color", "#42f5ec"); //background rengi
+            //$('.myClass').css("color", "white"); //font rengi
+            $("p[name='myName']").css("background-color", "#42e6f5"); //background rengi
+
+            $('h4,li').css("background-color", "#7842f5"); //liste rengi
+            $('li:eq(0)').css("background-color", "#7842f5");//1. elemanýn rengi
+            $('li:eq(1)').css("background-color", "#9b42f5");//2. elemanýn rengþ
+            $('li:eq(2)').css("background-color", "#b942f5");//3. elemanýn rengi
+            $('li:eq(3)').css("background-color", "#cb42f5");//4. elemanýn rengi
+            //$('li:lt(2)').css("background-color", "#cb42f5"); //ilk iki eleman renkli olur
+            //$('li:gt(1)').css("background-color", "#cb42f5"); //son iki eleman renkli olur
+            //$('li:contains(Muz)').css("background-color", "yellow"); //liste içinde muz yazan sarý renkli olur
+ 
+        });
+    </script>
+
+</head>
+<body>
+    <p class="myClass">Bu paragraf classa sahip.</p>
+    <h4 class="myClass">Bu baþlýk my class classýna sahip</h4>
+    <p id="myId">Bu paragraf ýdye sahip</p>
+    <p>Bu paragraf id'siz class'sýz</p>
+    <p name="myName">Bu paragraf id'siz class'sýz isme sahip</p>
+
+    <ul>
+        <h4>Meyveler</h4>
+        <li>Elma</li>
+        <li>Armut</li>
+        <li>Muz</li>
+        <li>Þeftali</li>
+    </ul>
+
+</body>
+</html>
